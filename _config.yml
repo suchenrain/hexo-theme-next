@@ -105,6 +105,14 @@ menu:
 menu_icons:
   enable: true
 
+# Language setting
+languages:
+  enable: true
+  icon: globe
+  list:
+    zh: 简体中文 || zh-Hans
+    en: English || en
+
 
 # ---------------------------------------------------------------
 # Scheme Settings
@@ -112,9 +120,9 @@ menu_icons:
 
 # Schemes
 # scheme: Muse
-# scheme: Mist
+scheme: Mist
 # scheme: Pisces
-scheme: Gemini
+# scheme: Gemini
 
 
 # ---------------------------------------------------------------

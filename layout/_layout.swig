@@ -24,6 +24,7 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"> {%- include '_partials/header.swig' %} </div>
+      <div class="header-right"> {%- include '_partials/header-right.swig' %} </div>
     </header>
 
     <main id="main" class="main">
