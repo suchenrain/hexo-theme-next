@@ -35,7 +35,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "Hexo, NexT, blog"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -45,10 +45,10 @@ rss:
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  #since: 2015
+  since: 2017
 
   # Icon between year and copyright info.
-  icon: user
+  icon: heart
 
   # If not defined, will be used `author` from Hexo main config.
   copyright:
@@ -60,7 +60,7 @@ footer:
     # Theme & scheme info link (Theme - NexT.scheme).
     enable: true
     # Version info of NexT after scheme info (vX.X.X).
-    version: true
+    version: false
   # -------------------------------------------------------------
   # Any custom text can be defined here.
   #custom_text: Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
@@ -93,10 +93,10 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   home: / || home
-  #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  categories: /categories/ || th
+  tags: /tags/ || tags
   archives: /archives/ || archive
+  about: /about/ || user
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -111,10 +111,10 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
-#scheme: Gemini
+# scheme: Muse
+# scheme: Mist
+# scheme: Pisces
+scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -154,7 +154,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+avatar: /images/zchen.jpg
 
 # Table Of Contents in the Sidebar
 toc:
@@ -216,8 +216,8 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
-  length: 150
+  enable: true
+  length: 270
 
 # Post meta display settings
 post_meta:
@@ -293,7 +293,7 @@ highlight_theme: normal
 # Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
 # ---------------------------------------------------------------
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default).
   host:
@@ -340,9 +340,19 @@ font:
 # Third Party Services Settings
 # ---------------------------------------------------------------
 
+# gitalk comments
+gitalk:
+  enable: true
+  githubID: suchenrain  # 例：asdfv1929   
+  repo: suchenrain.github.io   # 例：asdfv1929.github.io
+  ClientID: fd5e611d9b4e851bde2c
+  ClientSecret: 4326165e479c5ea93a38d0b09a5746314d9a21d1
+  adminUser: suchenrain #指定可初始化评论账户
+  distractionFreeMode: true
+
 # MathJax Support
 mathjax:
-  enable: false
+  enable: true
   per_page: false
   cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
@@ -372,6 +382,7 @@ changyan:
   enable: false
   appid:
   appkey:
+
 
 
 # Valine.
@@ -444,7 +455,7 @@ gitment:
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
-  enable: false
+  enable: true
   postbottom:
     enable: false
     options:
@@ -486,10 +497,10 @@ needmoreshare2:
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
 duoshuo_info:
-  ua_enable: true
+  ua_enable: false
   admin_enable: false
   user_id: 0
-  #admin_nickname: Author
+  admin_nickname: ZChen
 
 # Post widgets & FB/VK comments settings.
 # ---------------------------------------------------------------
@@ -604,7 +615,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
