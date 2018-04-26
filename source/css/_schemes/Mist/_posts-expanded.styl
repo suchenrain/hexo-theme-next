@@ -2,7 +2,9 @@
 // --------------------------------------------------
 .posts-expand {
   padding-top: 0;
-
+  +mobile() {
+    padding: 0 .5rem;
+  }
   .post-title,
   .post-meta {
     text-align: $site-meta-text-align;
@@ -10,7 +12,12 @@
   }
   .post-eof { display: none; }
 
-  .post { margin-top: 120px; }
+  //.post { margin-top: 120px; }
+  .post { margin-top: 5rem; 
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,.15);
+    padding: 1em 2em;
+  }
   .post:first-child { margin-top: 0; }
 
   .post-meta {

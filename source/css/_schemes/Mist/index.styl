@@ -40,6 +40,7 @@
 
 // Page - Container
 // --------------------------------------------------
+.container { background: #ebecee;}
 .container .main-inner {
   +mobile() { width: auto; }
 }
@@ -89,3 +90,15 @@
 
 // Helpers
 // --------------------------------------------------
+
+// Expand image to 126% with nagative margin-left/right on Desktop.
+.full-image.full-image.full-image.full-image {
+  +desktop() {
+    width: 120%;
+    margin: $full-image-margin-vertical -10%;
+    box-shadow: 0 0 3px rgba(0,0,0,.15);
+    padding: 5px;
+    background: #fff;
+    
+  }
+}
