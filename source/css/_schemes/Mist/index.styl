@@ -42,7 +42,11 @@
 // --------------------------------------------------
 .container { background: #ebecee;}
 .container .main-inner {
+  +desktop() { width: 760px; }
   +mobile() { width: auto; }
+  +desktop-large() {
+    width: $content-desktop-large;
+  }
 }
 
 
