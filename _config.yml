@@ -110,7 +110,7 @@ languages:
   enable: true
   icon: globe
   list:
-    zh: 简体中文 || zh-Hans
+    zh: 简体中文 || zh-cn
     en: English || en
 
 

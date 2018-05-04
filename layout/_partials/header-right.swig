@@ -9,7 +9,7 @@
 </div>
      <script type="text/javascript">
     (function(){
-        if(window.location.pathname.indexOf('en')>-1){
+        if(window.location.pathname.indexOf('/en/')>-1){
             var b = document.getElementById("lang-select") 
             b.value="en"
             var l= document.getElementById("lang-text")
@@ -18,10 +18,10 @@
     })()
 
     function langChange(){
-        var lang = document.getElementById("lang-select").value||'zh-Hans'
+        var lang = document.getElementById("lang-select").value||'zh-cn'
         switch(lang){
-            case 'zh-Hans':
-            window.location ="{{switch_lang('zh-Hans')}}";
+            case 'zh-cn':
+            window.location ="{{switch_lang('zh-cn')}}";
             break;
             case 'en':
             window.location ="{{switch_lang('en')}}";
