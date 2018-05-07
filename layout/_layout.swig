@@ -21,6 +21,9 @@
 
   <div class="{{ container_class }} {% block page_class %}{% endblock %}">
     <div class="headband"></div>
+    {% if theme.fork.enable %}
+    <a class="head-fork" href="{{ theme.fork.address }}"><img style="position: absolute; top: 0; left: 0; border: 0;" src="{{ theme.fork.pic }}" alt="Fork me on GitHub"></a>
+    {% endif %}
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"> {%- include '_partials/header.swig' %} </div>
@@ -90,4 +93,8 @@
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
 </body>
+{% if theme.custom.clickheart %}
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+{% endif %}
 </html>
