@@ -41,7 +41,10 @@
   .post-title:hover:before { background: $black-deep; }
 
   .post-body {
-    +mobile() { font-size: $font-size-small; }
+    +mobile() { 
+      font-size: $font-size-small; 
+      line-height: 1.9rem;
+    }
   }
 
   .post-body img { margin: 0; }
