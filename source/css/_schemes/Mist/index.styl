@@ -136,11 +136,16 @@ blockquote{
   .post-meta { text-align: center; 
       +mobile(){
         margin-bottom: 1.5rem !important;
-        text-align:left !important;
     }
   }
 
   .post-title:before { display: none; }
 
   .post-meta { margin-bottom: 60px; }
+}
+.header-inner {
+  +mobile() {
+    margin-bottom: 2.5rem;
+    border-bottom: .1rem #222222 solid;
+  }
 }

@@ -336,8 +336,8 @@
     {% if not is_index %}
       <div>
         {% if theme.passage_end_tag.enabled %}
-        <div style="text-align:center;font-style: italic;color: #f44336b0;font-size:.9rem;line-height: 1rem;">
-          {{ __('post.last_updated') }}: {{ date(post.updated, theme.passage_end_tag.date_format) }} 
+        <div style="text-align:center;padding: 2rem 0 0;color: #d5274e;font-size:.8rem;line-height: 1rem; font-weight: bold;">
+          &lt;!--{{ __('post.last_updated') }}: {{ date(post.updated, theme.passage_end_tag.date_format) }} --&gt; 
         </div>
     {% endif %}
       </div>
