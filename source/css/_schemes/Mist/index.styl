@@ -109,8 +109,11 @@
 
 // Mist Custom
 code{
-  border: 1px #ccc solid;
-  background: #f6f7f7;
+    padding: 2px 4px;
+    font-size: 95%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
 }
 
 blockquote{
@@ -120,4 +123,24 @@ blockquote{
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 10px 6px -6px #777;
+}
+
+.sidebar-nav li{
+  color: #d6d7da
+}
+
+.page-post-detail {
+  .post-title { margin-top:.5rem; }
+  
+  .post-title,
+  .post-meta { text-align: center; 
+      +mobile(){
+        margin-bottom: 1.5rem !important;
+        text-align:left !important;
+    }
+  }
+
+  .post-title:before { display: none; }
+
+  .post-meta { margin-bottom: 60px; }
 }

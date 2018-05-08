@@ -249,7 +249,7 @@
                   <span class="post-meta-item-text">{{ __('post.min2read') }} &asymp;</span>
                 {% endif %}
                 <span title="{{ __('post.min2read') }}">
-                  {{ min2read(post.content) }}
+                  {{ min2read(post.content) }}&nbsp;{{ __('post.min2readUnit') }}
                 </span>
               {% endif %}
             </div>
@@ -336,7 +336,7 @@
     {% if not is_index %}
       <div>
         {% if theme.passage_end_tag.enabled %}
-        <div style="text-align:center;color: #999;font-size:.9rem;line-height: 1rem;">
+        <div style="text-align:center;font-style: italic;color: #f44336b0;font-size:.9rem;line-height: 1rem;">
           {{ __('post.last_updated') }}: {{ date(post.updated, theme.passage_end_tag.date_format) }} 
         </div>
     {% endif %}
