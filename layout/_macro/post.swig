@@ -333,6 +333,15 @@
     {#####################}
     {### END POST BODY ###}
     {#####################}
+    {% if not is_index %}
+      <div>
+        {% if theme.passage_end_tag.enabled %}
+        <div style="text-align:center;color: #999;font-size:.9rem;line-height: 1rem;">
+          {{ __('post.last_updated') }}: {{ date(post.updated, theme.passage_end_tag.date_format) }} 
+        </div>
+    {% endif %}
+      </div>
+    {% endif %}
 
     {% if theme.wechat_subscriber.enabled and not is_index %}
       <div>
