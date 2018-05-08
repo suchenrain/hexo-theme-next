@@ -42,7 +42,7 @@
 // --------------------------------------------------
 .container { background: #fbfcff;}
 .container .main-inner {
-  +desktop() { width: 760px; }
+  +desktop() { width: $content-desktop; }
   +mobile() { width: auto; }
   +desktop-large() {
     width: $content-desktop-large;
@@ -146,6 +146,6 @@ blockquote{
 .header-inner {
   +mobile() {
     margin-bottom: 2.5rem;
-    border-bottom: .1rem #222222 solid;
+    border-bottom: .2rem #777 solid;
   }
 }

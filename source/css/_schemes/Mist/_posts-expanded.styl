@@ -50,6 +50,12 @@
 
   .post-body img { margin: 0; }
 
+  .mask-content{
+    -webkit-mask-image: linear-gradient(#1a1a1a calc(100% - 8rem),transparent calc(100% - 2.8rem));
+    mask-image: linear-gradient(#1a1a1a calc(100% - 8rem),transparent calc(100% - 2.8rem));
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
   .post-tags {
     text-align: left;
     a {
@@ -80,5 +86,13 @@
 
 
     &:hover { border-bottom-color: $black-deep; }
+  }
+}
+.post-readmore{
+  position: relative;
+  top: -3.5rem;
+
+  a {
+    border:none;
   }
 }

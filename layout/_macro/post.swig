@@ -268,7 +268,7 @@
     {#################}
     {### POST BODY ###}
     {#################}
-    <div class="post-body{% if theme.han %} han-init-context{% endif %}{% if post.direction && post.direction.toLowerCase() === 'rtl' %} rtl{% endif %}" itemprop="articleBody">
+    <div class="post-body  {% if is_index and theme.scheme === "Mist" %} mask-content {% endif %} {% if theme.han %} han-init-context{% endif %}{% if post.direction && post.direction.toLowerCase() === 'rtl' %} rtl{% endif %}" itemprop="articleBody">
 
       {# Gallery support #}
       {% if post.photos and post.photos.length %}
@@ -330,6 +330,13 @@
         {{ post.content }}
       {% endif  %}
     </div>
+    {% if is_index and theme.scheme === "Mist" %}
+          <div class="post-readmore text-center">
+            <a  href="{{ url_for_lang(post.path) }}">
+              {{ __('post.read_more') }} &raquo;
+            </a>
+          </div>
+    {% endif %}
     {#####################}
     {### END POST BODY ###}
     {#####################}
