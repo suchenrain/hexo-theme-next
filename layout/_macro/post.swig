@@ -268,7 +268,7 @@
     {#################}
     {### POST BODY ###}
     {#################}
-    <div class="post-body  {% if is_index and theme.scheme === "Mist" %} mask-content {% endif %} {% if theme.han %} han-init-context{% endif %}{% if post.direction && post.direction.toLowerCase() === 'rtl' %} rtl{% endif %}" itemprop="articleBody">
+    <div class="post-body  {% if is_index and theme.scheme === "Mist" %} mask-content {% endif %} {% if theme.han %} han-init-context{% endif %}{% if post.direction && post.direction.toLowerCase() === 'rtl' %} rtl{% endif %}" itemprop="articleBody" data-license="{% if theme.custom.license.option === "all" or post.license ==="nd" %}nd{% endif %}">
 
       {# Gallery support #}
       {% if post.photos and post.photos.length %}

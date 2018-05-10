@@ -846,3 +846,8 @@ fork:
 custom:
   clickheart: true  #点击红心效果
   fireworks: false #点击爆炸效果
+
+  license:
+    enable: true
+    # option: all
+    option: demand
