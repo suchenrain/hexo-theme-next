@@ -93,6 +93,10 @@
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
 </body>
+{% if theme.custom.crashcheat.enable %}
+<!--崩溃欺骗-->
+<script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+{% endif %}
 {% if theme.custom.license.enable %}
 <!-- 转载提示 -->
 <script type="text/javascript" src="/js/src/license-tooltip.js"></script>

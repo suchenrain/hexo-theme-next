@@ -851,3 +851,5 @@ custom:
     enable: true
     # option: all
     option: demand
+  crashcheat: #页面崩溃欺诈
+    enable: true

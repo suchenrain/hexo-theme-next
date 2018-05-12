@@ -125,11 +125,26 @@ blockquote{
   box-shadow: 0 10px 6px -6px #777;
 }
 // sf blockquote style
-blockquote.info{
-  border-left: 2px solid #009A61;
-  background: #F6F6F6;
+blockquote.pass{
+  border-left: 3px solid #009a61;
+  background: #f6f6f6;
   color: #555;
-  padding:10px 20px;
+  padding: .2rem 0 0 .7rem;
+  box-shadow: none;
+}
+blockquote.info{
+  border-left: 3px solid #6190ea;
+  background: #f6f6f6;
+  color: #555;
+  padding: .2rem 0 0 .7rem;
+  box-shadow: none;
+}
+blockquote.warn{
+  border-left: 3px solid #f44336;
+  background: #f6f6f6;
+  color: #555;
+  padding: .2rem 0 0 .7rem;
+  box-shadow: none;
 }
 
 .sidebar-nav li{
@@ -181,3 +196,30 @@ ul.nav-tabs {
     }
 }
 */
+
+// 文章内链接样式
+// 文章内链接文本样式
+.post-body p a{
+  color: #6190e8;
+  border-bottom: none;
+  border-bottom: 1px solid #6190e8;
+  &:hover {
+    color: #fc6423;
+    border-bottom: none;
+    border-bottom: 1px solid #fc6423;
+  }
+}
+
+
+//local gist style (code)
+.highlight {
+    border-radius: 3px;
+    border: 1px #eee solid;
+}
+.highlight figcaption {
+    background: #fff;
+    border-bottom: 1px #eee solid;
+    padding: .5rem 0 .5rem .5rem;
+    font-weight: bold;
+    color: rgb(51, 58, 51);
+}
