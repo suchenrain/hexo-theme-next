@@ -46,3 +46,41 @@
     background-color: #FF5722;
     //border-radius: 4px;
 }
+
+//hint note
+
+.hint {
+    margin: 1.5rem 0;
+    padding: .5rem .875rem;
+    border-radius: 3px;
+
+    h4,h5,h6:first-child{
+        margin-top:0 !important;
+        padding-top: 0 !important;
+    }
+    p{
+        margin-bottom:.5rem;
+    }
+    p:last-child{
+        margin-bottom:0;
+    }
+    &.success{
+        background: #f8f8dd;
+        border: 1px solid #d3d952;
+    }
+
+    &.info{
+        background: #d4f3fd;
+        border: 1px solid #94bbeb;
+    }
+
+    &.warning{
+        background: #fbe6d1;
+        border: 1px solid #ec8b01;
+    }
+
+    &.danger{
+        background: #fed5d3;
+        border: 1px solid #dc7874;
+    }
+}
