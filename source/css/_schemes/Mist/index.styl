@@ -224,14 +224,24 @@ ul.nav-tabs {
 .highlight {
     border-radius: 3px;
     border: 1px #eee solid;
+    box-shadow: 0 0.5px 0 0 #ffffff inset, 0 1px 2px 0 #B3B3B3;
 }
 .highlight figcaption {
     background: #fff;
     border-bottom: 1px #eee solid;
-    padding: .5rem 0 .5rem .5rem;
-    margin-bottom:0;
+    border-right: 1px #eee solid;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    position: fixed;
+    width: 99.9%;
+    box-sizing: border-box;
     
 }
+.highlight figcaption + table{
+  pre{
+    margin-top: 2rem;
+  }
+}
+
 .highlight .gutter pre{
     color: rgba(158, 158, 158, 0.53);
     background-color: #f7f7f7;
@@ -243,9 +253,10 @@ ul.nav-tabs {
 }
 .highlight figcaption a {
     float: right;
-    color: #9E9E9E;
+    color: rgb(33, 150, 243);
     font-weight: normal;
-    margin-right: .5rem;
+    margin-right: 1rem;
+    border: none;
 }
 .highlight figcaption::before{
     content: " ";
