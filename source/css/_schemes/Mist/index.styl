@@ -229,6 +229,64 @@ ul.nav-tabs {
     background: #fff;
     border-bottom: 1px #eee solid;
     padding: .5rem 0 .5rem .5rem;
-    font-weight: bold;
-    color: rgb(51, 58, 51);
+    margin-bottom:0;
+    
+}
+.highlight .gutter pre{
+    color: rgba(158, 158, 158, 0.53);
+    background-color: #f7f7f7;
+}
+.highlight figcaption span{
+  padding-left: 50px;
+  font-weight: bold;
+  color: #333a33a8;
+}
+.highlight figcaption a {
+    float: right;
+    color: #9E9E9E;
+    font-weight: normal;
+    margin-right: .5rem;
+}
+.highlight figcaption::before{
+    content: " ";
+    position: relative;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #fc625d;
+    width: 12px;
+    height: 12px;
+    top: 0;
+    left: 0;
+    -webkit-box-shadow: 20px 0px #fdbc40, 40px 0px #35cd4b;
+    box-shadow: 20px 0px #fdbc40, 40px 0px #35cd4b;
+    z-index: 3;
+    display: inline-block;
+}
+
+/**  STYLE 11 */
+figure.highlight::-webkit-scrollbar {
+	width: .4rem;
+  height:.4rem;
+	background-color: #F5F5F5;
+}
+
+figure.highlight::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0,0,0,0.1);
+  border: 1px solid #ccc;
+}
+
+figure.highlight::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #aaa;
+}
+
+figure.highlight::-webkit-scrollbar-thumb:hover {
+  background: #FFC107
+  border:none;
+}
+
+figure.highlight::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(left, #22ADD4, #1E98BA);
 }
