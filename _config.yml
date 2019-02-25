@@ -355,7 +355,7 @@ font:
 
 # gitalk comments
 gitalk:
-  enable: true
+  enable: false
   githubID: suchenrain  # 例：asdfv1929   
   repo: suchenrain.github.io   # 例：asdfv1929.github.io
   ClientID: fd5e611d9b4e851bde2c
@@ -679,7 +679,7 @@ tabs:
 # Use velocity to animate everything.
 motion:
   enable: true
-  async: false
+  async: true
   transition:
     # Transition variants:
     # fadeIn | fadeOut | flipXIn | flipXOut | flipYIn | flipYOut | flipBounceXIn | flipBounceXOut | flipBounceYIn | flipBounceYOut
