@@ -107,7 +107,7 @@ menu_icons:
 
 # Language setting
 languages:
-  enable: true
+  enable: false
   icon: globe
   list:
     zh: 简体中文 || zh-cn
