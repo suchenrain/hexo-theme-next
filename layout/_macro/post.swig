@@ -59,7 +59,18 @@
           #}{% endif %}{#
         #}</{% if theme.seo %}h2{% else %}h1{% endif %}>
         {% endif %}
-
+        <div class="mobile-post-meta">
+          <span class="created-time">
+            {% if theme.post_meta.created_at %}
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <time title="{{ __('post.created') }}" itemprop="dateCreated datePublished" datetime="{{ moment(post.date).format() }}">
+                {{ date(post.date, config.post_format) }}
+              </time>
+            {% endif %}
+          </span>
+        </div>
         <div class="post-meta">
           <span class="post-time">
             {% if theme.post_meta.created_at %}
@@ -70,7 +81,7 @@
                 <span class="post-meta-item-text">{{ __('post.posted') }}</span>
               {% endif %}
               <time title="{{ __('post.created') }}" itemprop="dateCreated datePublished" datetime="{{ moment(post.date).format() }}">
-                {{ date(post.date, config.date_format) }}
+                {{ date(post.date, config.post_format) }}
               </time>
             {% endif %}
 
@@ -86,7 +97,7 @@
                 <span class="post-meta-item-text">{{ __('post.modified') }}&#58;</span>
               {% endif %}
               <time title="{{ __('post.modified') }}" itemprop="dateModified" datetime="{{ moment(post.updated).format() }}">
-                {{ date(post.updated, config.date_format) }}
+                {{ date(post.updated, config.post_format) }}
               </time>
             {% endif %}
           </span>

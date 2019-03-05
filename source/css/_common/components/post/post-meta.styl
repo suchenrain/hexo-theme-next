@@ -1,5 +1,6 @@
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
+  +mobile(){ display:none;}
   color: $grey-dark;
   font-family: $font-family-posts;
   font-size: 12px;
@@ -15,6 +16,17 @@
   .post-description {
     font-size: 14px;
     margin-top: 2px;
+  }
+}
+.mobile-post-meta{
+  display:none;
+  +mobile(){ display:block; }
+
+  font-size: 13px;
+  color:#b1b1b1;
+  margin-bottom:20px;
+  .post-meta-item-icon {
+    color: #f16156;
   }
 }
 

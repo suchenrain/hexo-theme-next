@@ -28,6 +28,7 @@ code {
 pre {
   @extend $code-block;
   padding: 10px;
+  +mobile() { font-size: 12px; }
 
   code {
     padding: 0;
@@ -40,6 +41,7 @@ pre {
 .highlight {
   @extend $code-block;
   border-radius: 1px
+ 
 
   pre {
     border: none;
